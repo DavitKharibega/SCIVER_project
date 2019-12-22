@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>SCIVER</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./project1.css">
+    <style>
+
+      body{
+        background-color: rgb(36, 36, 49);
+      }
+      .head{
+        width:100%;
+        height:auto;
+        background-color: black;;
+        position:relative;
+      }
+      .padd:hover{
+        color:white;
+        cursor:pointer;
+      }
+      .nav{
+        padding:10px;
+      }
+      .padd{
+        color:grey;
+        padding-top:45px;
+        padding-left:30px;
+      }
+      .teqsti{
+        background-color: #171717;
+        border-color: rgb(65, 65, 65);
+        color: azure;
+      }
+      .sbutton{
+        background-color: #3b3b3b;
+        border-color: #333232;
+      }
+      </style>
+
+</head>
+
+ <body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+     <div class="head">   
+       <div class="nav">
+          <a class="padd" href="./Bisbul.html">მთავარი</a>
+          <a class="padd" onclick="shes()">შესახებ</a>
+          <a class="padd" onclick="shes()">კონტაქტი</a>
+          <div style="float:right;">
+            <input type="text" placeholder="ძებნა..." class="teqsti" style="font-size:1em;"
+            id="text">           
+            <button type="submit" class="sbutton"><i class="fa fa-search" onclick="dzebna()"
+             id="button"></i></button>
+          </div>
+       </div>
+     </div>
+
+        <div class="" style="background:black;clear:both;">
+        <div class="slideshow-container" >
+        
+        <div class="mySlides fade">
+          <img src="c1.jpg" width="50%" class="show"><!--assassin-->
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="c2.jpg" width="50%" class="show"><!--callofduty-->
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="c3.jpg" width="50%" class="show">
+        </div>
+
+        
+        <a class="prev" onclick="minusSlide()" >&#10094;</a>
+        <a class="next" onclick="plusSlides()">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+      </div>
+ 
+  <div class="cent"></div>
+    <div class="game">
+       
+   </div>
+  </div>
+  <div style="text-align: center; font-size: 40px;" id="about">
+    <p>შექმნილია დავით ხარიბეგშვილის მიერ</p>    
+    <p>ამ საიტზე იქნება განთავსებული ინფორმაცია ნებისმიერი თამაშის შესახებ
+    და ეს ინფორამციები განახლდება თამაშების გამოსვლისთანავე</p>
+    <p>Gmail: d_kharibegashvili@cu.edu.ge</p>    
+  </div>
+
+</body>
+
+<script src="./project1.js"> </script>
+</html>

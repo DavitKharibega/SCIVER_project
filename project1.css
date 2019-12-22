@@ -1,0 +1,292 @@
+
+     * {box-sizing: border-box}
+
+     body {font-family: Verdana, sans-serif; margin:0}
+
+
+     .mySlides {
+      display: none}
+
+     img {vertical-align: middle;}
+
+     .slideshow-container {
+       text-align: center;
+       position: relative;
+       margin: auto;
+       left: -27px;       
+     }
+
+     .prev, .next {
+       cursor: pointer;
+       position: absolute;
+       top: 0;
+       width: auto;
+       height: 105%;
+       padding: 16px;
+       margin-top: auto;
+       color: white;
+       font-weight: bold;
+       font-size: 18px;
+       transition: 0.6s ease;
+       border-radius: 0 3px 3px 0;
+       user-select:none;
+       padding-top: 13%;
+     }
+     
+     /* Position the "next button" to the right */
+     .next {
+       margin-left:28%;
+       border-radius: 3px 0 0 3px;
+     }
+     /* Position the "previouse button" to the right */
+     .prev{
+       z-index: 1;
+       padding-bottom: 15%;
+       margin-left:-26%;
+      
+     }
+     
+     /* On hover, add a black background color with a little bit see-through */
+     .prev:hover, .next:hover {
+       background-color: rgba(0,0,0,0.8);
+     }
+    
+     /* The dots/bullets/indicators */
+     .dot {
+       cursor: pointer;
+       height: 15px;
+       width: 15px;
+       margin: 0 2px;
+       background-color:darkslategray;
+       border-radius: 50%;
+       display: inline-block;
+       transition: background-color 0.6s ease;
+     }
+     
+     .active, .dot:hover {
+       background-color:blue;
+     }
+     
+     /* Fading animation */
+     .fade {
+       -webkit-animation-name: fade;
+       -webkit-animation-duration: 1.5s;
+       animation-name: fade;
+       animation-duration: 1.5s;
+     }
+     
+     @-webkit-keyframes fade {
+       from {opacity: .4} 
+       to {opacity: 1}
+     }
+     
+     @keyframes fade {
+       from {opacity: .4} 
+       to {opacity: 1}
+     }
+     
+     /* On smaller screens, decrease text size */
+     @media only screen and (max-width: 300px) {
+       .prev, .next,.text {font-size: 11px}
+     }
+
+     
+     
+
+
+
+* {box-sizing: border-box;
+ font-family: Arial, Helvetica, sans-serif;
+ }
+
+   
+   .topnav a {
+     float: left;
+     display: block;
+     color: darkgrey;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 17px;
+     border-radius: 40px;
+   }
+   .topnav input{
+     z-index: 1;
+   }
+   .topnav a:hover {
+     background-color:darkgrey;
+     color:darkgrey;
+   }
+   
+   .topnav a.active {
+     color: darkgrey;
+   }
+   
+   .topnav .search-container {
+     float: right;
+   }
+   
+   .topnav input[type=text] {
+     padding: 6px;
+     margin-top: 8px;
+     font-size: 17px;
+     border: none;
+   }
+   
+   .topnav .search-container button {
+     float: right;
+     padding: 6px 10px;
+     margin-top: 8px;
+     margin-right: 16px;
+     background: darkgrey;
+     font-size: 17px;
+     border: none;
+     cursor: pointer;
+   }
+   
+   .topnav .search-container button:hover {
+     background: black;
+   }
+   
+   @media screen and (max-width: 600px) {
+     .topnav .search-container {       
+       float: none;
+     }
+     .topnav a, .topnav input[type=text], .topnav .search-container button {
+       float: none;
+       display: block;
+       text-align: left;
+       width: 100%;
+       margin: 0;
+       padding: 14px;
+     }
+     .topnav input[type=text] {
+       border: 1px solid #ccc; 
+     }
+   }
+   .about {
+     position: fixed; 
+     text-align: center;
+     bottom: 0;
+     font-size: 12px;
+     font-style: italic;
+    
+     color: darkgrey;
+   }
+   .table {
+      text-align: center;
+      color: darkgray; 
+   }
+   .assassin {
+     position: relative;
+     top: auto;
+     right: auto;
+     text-align: right;
+     width: 200px;
+     height: 200px;
+   }
+   .callofduty {
+     position: relative;
+     top: -150px;
+     right: 765px;
+     text-align: right;
+     
+   }
+   .grid{
+     position: relative;
+     top: -590px;
+     right: 455px;
+     text-align: right;
+     
+   }
+   .truck {
+     position: relative;
+     top: -1013px;
+     right:130px;
+     text-align: right;
+    
+   }
+   body {
+     background-image: url();
+     background-size: 1565px;
+   }
+   #contact{
+     color:white;
+     display: none;
+   }
+
+
+
+* {
+  font-family: 'Roboto' sans-serif;
+  font-size: 22px;
+}
+
+
+.imge:hover{
+opacity:0.5;
+cursor:pointer;
+}
+.center{
+position:absolute;
+margin-left:110px;
+margin-top:160px;
+}
+.hover{
+transition:1s;
+display:none;
+}
+.card{
+margin:10px;
+margin-left:20px;
+float:left;
+
+}
+.preview{
+display:none;
+margin-left:10px;
+margin-top:25px;
+border-radius:10px;
+width:35%;
+height:auto;
+box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+position:absolute;
+background-color: rgba(122, 121, 121, 0.986);;
+}
+
+p{
+font-size:.61em; 
+padding-left:4px;
+}
+.game{
+  position:relative;
+  text-align: center;
+  
+}
+.show{
+  margin-left:5%;
+}
+.cent{
+  clear:both;
+  position:absolute;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(61, 58, 58); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
